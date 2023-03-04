@@ -76,3 +76,38 @@ Poniendo a prueba los conocimientos realizando la mision preparada por Make It R
 AÃ±adiendo informaciÃ³n para el nuevo commit.
 PS C:\Users\Migue y Chris\Desktop\ejercicios\ejercicio1\mision_s3> git ls-files --other --ignored --exclude-standard
 .env
+
+
+//este es el repositorio clonado y los comandos usados son los siguientes:
+PS C:\Users\Migue y Chris\Desktop\ejercicios\ejercicio1> cd mision_s3
+PS C:\Users\Migue y Chris\Desktop\ejercicios\ejercicio1\mision_s3> cd aspirantes-mir-ejercicio-3
+PS C:\Users\Migue y Chris\Desktop\ejercicios\ejercicio1\mision_s3\aspirantes-mir-ejercicio-3> git init
+Reinitialized existing Git repository in C:/Users/Migue y Chris/Desktop/Ejercicios/Ejercicio1/mision_s3/aspirantes-mir-ejercicio-3/.git/
+PS C:\Users\Migue y Chris\Desktop\ejercicios\ejercicio1\mision_s3\aspirantes-mir-ejercicio-3> git status
+On branch nueva-funcionalidad
+nothing to commit, working tree clean
+PS C:\Users\Migue y Chris\Desktop\ejercicios\ejercicio1\mision_s3\aspirantes-mir-ejercicio-3> git status
+On branch nueva-funcionalidad
+nothing to commit, working tree clean
+PS C:\Users\Migue y Chris\Desktop\ejercicios\ejercicio1\mision_s3\aspirantes-mir-ejercicio-3> git branch
+  master
+* nueva-funcionalidad
+PS C:\Users\Migue y Chris\Desktop\ejercicios\ejercicio1\mision_s3\aspirantes-mir-ejercicio-3> git add nuevo-archivo.txt
+PS C:\Users\Migue y Chris\Desktop\ejercicios\ejercicio1\mision_s3\aspirantes-mir-ejercicio-3> git commit -m "commit en rama nueva-funcionalidad"
+[nueva-funcionalidad 6d9c2d4] commit en rama nueva-funcionalidad
+ 1 file changed, 1 insertion(+)
+ create mode 100644 nuevo-archivo.txt
+PS C:\Users\Migue y Chris\Desktop\ejercicios\ejercicio1\mision_s3\aspirantes-mir-ejercicio-3> git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+PS C:\Users\Migue y Chris\Desktop\ejercicios\ejercicio1\mision_s3\aspirantes-mir-ejercicio-3> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS C:\Users\Migue y Chris\Desktop\ejercicios\ejercicio1\mision_s3\aspirantes-mir-ejercicio-3> git merge nueva-funcionalidad
+Updating b7638fc..6d9c2d4
+Fast-forward
+ nuevo-archivo.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 nuevo-archivo.txt
